@@ -35,6 +35,7 @@ let hummus = {
 
    */
 //Ramone's Example
+//created an object to hold the function
 var hum1 = { 
 
     create : function()
@@ -44,7 +45,7 @@ var hum1 = {
 
     eat : function()
     {
-        console.log("I'm eating hummus. Nice and Spicy!");
+        console.log("I'm eating hummus. Yum! Nice and Spicy!");
         hum1.destory;
     },
 
