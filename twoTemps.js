@@ -6,28 +6,27 @@
 // icyHot(-1, 120) → true
 // icyHot(2, 120) → false 
 
-function twoTemps()
+var temp1;
+var temp2;
+
+function twoTemps(temp1, temp2)
 {
-    var oneT;
-    var twoT;
-
-    //if (((oneT || twoT) < 0) && ((oneT || twoT) > 100))
-
-    if (((oneT || twoT) < 0))
-    {
-        console.log("True!");
-    }
-    /* else
-    {
-        console.log("False!");
-    } */
-
-    console.log(oneT + " " + twoT);
-
-//twoTemps(1,1);
-twoTemps(-1,-1);
-//twoTemps(-1,101);
-//twoTemps(103,-1);
-
+   if ((temp1 < 0 || temp1 > 100) && (temp2 < 0 || temp2 > 100))
+   // (temp1 < 0 || temp1 > 100) WORKING!!
+   {
+       console.log("True! " + temp1 + "," + temp2);
+   }
+    else
+   {
+       console.log("False! " + temp1 + "," + temp2);
+   }
+ 
 } // EOF
 
+twoTemps(20,20);
+twoTemps(0,-1);
+twoTemps(-20,20);
+twoTemps(-1,-100);
+twoTemps(120, -1);
+twoTemps(-1, 120);
+twoTemps(2, 120);
